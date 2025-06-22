@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parry - The Advanced Spooky Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style_advanced.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="fog-layer"></div>
+        <div class="shadow-layer"></div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>👻 PARRY</h1>
+            <div class="subtitle">Advanced Paranoid AI - 1972</div>
+            <div class="controls">
+                <button id="toggle-sound" class="control-btn">🔊 Sound: ON</button>
+                <button id="toggle-bg" class="control-btn">🎵 Background: ON</button>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="paranoia-meter">
+                <div class="meter-label">Paranoia Level</div>
+                <div class="meter-bar">
+                    <div id="paranoia-fill" class="meter-fill"></div>
+                </div>
+                <div id="paranoia-text" class="meter-text">Neutral</div>
+            </div>
+            
+            <div id="chat-window" class="chat-window">
+                <div class="message parry">
+                    <span class="message-text">Parry: Hello there... I've been waiting for you.</span>
+                    <span class="message-time">[State: Neutral]</span>
+                </div>
+            </div>
+            
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="user-input" autocomplete="off" placeholder="Type your message..." required />
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <div class="status">Status: <span id="connection-status">Connected</span></div>
+            <div class="version">v2.0 - Advanced NLP Paranoia Engine</div>
+        </div>
+    </div>
+    
+    <!-- Audio elements -->
+    <audio id="background-music" loop>
+        <source src="/static/sounds/ambient_creepy.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound-effect"></audio>
+    
+    <script src="/static/chat_advanced.js"></script>
+</body>
+</html> 

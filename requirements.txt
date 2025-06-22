@@ -1,0 +1,7 @@
+Flask
+spacy
+nltk
+textblob
+pyttsx3
+playsound
+requests 
